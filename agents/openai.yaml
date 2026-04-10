@@ -1,0 +1,7 @@
+interface:
+  display_name: "飞书文档网页化"
+  short_description: "把飞书文档和知识库变成精美静态网站"
+  default_prompt: "Use $feishu-doc-webify to turn this Feishu document or Wiki link into a polished static website and publish it to GitHub Pages."
+policy:
+  allow_implicit_invocation: true
+
