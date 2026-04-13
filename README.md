@@ -2,7 +2,7 @@
 
 把沉重的飞书文档和知识库，变成一个真正值得分享的网页。
 
-飞书很适合写知识库，但不擅长做“对外展示”。排版受限、视觉平、导航弱，长文越多越像一堵墙。`feishu-doc-webify` 是一个 Codex / OpenCode Skill：给它一个飞书 `docx`、`doc` 或 `wiki` 链接，它会抓取内容、保留结构、重新排成精美静态网站，并发布到 GitHub Pages。
+飞书很适合写知识库，但不擅长做“对外展示”。排版受限、视觉平、导航弱，长文越多越像一堵墙。`feishu-doc-webify` 是一个 Skill：给它一个飞书 `docx`、`doc` 或 `wiki` 链接，它会抓取内容、保留结构、重新排成精美静态网站，并发布到 GitHub Pages。
 
 适合这些场景：
 
@@ -67,7 +67,7 @@ After:
 - **单篇和知识库都能处理**：单篇文档生成 `index.html`；Wiki 子树生成首页、多篇文档页面和搜索索引。
 - **发布前保护隐私**：每次发布前都必须确认仓库名和公开/私有，不会偷偷把内部知识库变成公开站点。
 
-## 安装
+## 安装（或者其他agent都可以）
 
 ### Codex
 
@@ -78,11 +78,6 @@ git clone https://github.com/wocha-xiaoli/feishu-doc-webify.git \
 
 重启 Codex 后即可使用。
 
-### OpenCode 外部 Skills
-
-```bash
-git clone https://github.com/wocha-xiaoli/feishu-doc-webify.git \
-  ~/.config/opencode/skills/feishu-doc-webify
 ```
 
 ## 前置条件
@@ -114,7 +109,7 @@ gh auth login
 
 ## 怎么用
 
-在 Codex / OpenCode 里直接说：
+在 Codex / OpenCode/claude code 里直接说：
 
 ```text
 用 feishu-doc-webify，把这个飞书文档网页化：
@@ -268,7 +263,7 @@ feishu-doc-webify/
 
 ## 给谁用
 
-给那些“内容已经很强，但飞书排版拉不住”的人：
+给那些“内容已经很强，但飞书排版搞不定”的人：
 
 - 创始人写方法论
 - 咨询顾问交付知识库
